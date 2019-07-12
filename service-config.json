@@ -1,0 +1,5 @@
+{
+    "uri":"jdbc:sqlserver://[server name].database.windows.net:1433;databaseName=[database name]",
+    "uid":"[user name]@[server name]",
+    "pw":"[password]"
+}

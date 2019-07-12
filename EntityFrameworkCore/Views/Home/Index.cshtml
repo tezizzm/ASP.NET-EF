@@ -1,0 +1,26 @@
+﻿@model IList<TeamViewModel>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Location</th>
+            <th scope="col">Team</th>
+            <th scope="col">Mascot</th>
+        </tr>
+    </thead>
+    <tbody>
+    
+    @foreach (var team in Model)
+    {
+        <tr>
+            <th scope="row">@team.Location</th>
+            <td>@team.TeamName</td>
+            <td>@team.Mascot</td>
+        </tr>
+    }
+    </tbody>
+</table>

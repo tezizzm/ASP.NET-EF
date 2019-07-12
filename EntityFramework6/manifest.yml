@@ -1,0 +1,11 @@
+﻿applications:
+- name: EntityFramework6
+  buildpack: dotnet_core_buildpack
+  memory: 128M
+  random-route: true
+  stack: cflinuxfs3
+  path: .\bin\Debug\net461\publish\
+  env:
+    ASPNETCORE_ENVIRONMENT: development
+  services:
+  - sqlServerService
